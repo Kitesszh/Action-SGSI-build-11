@@ -69,7 +69,8 @@ jobs:
           sudo bash $GITHUB_WORKSPACE/Tool-SGSI-build/make.sh AB << EOF
           ${{ github.event.inputs.ZIP_NAME }}
           y
-          n
+          y
+           
           y
 
       - name: Packing(AB)...
