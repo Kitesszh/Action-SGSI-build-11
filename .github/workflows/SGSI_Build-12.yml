@@ -66,11 +66,10 @@ jobs:
 
       - name: Make AB type GSI‌‌...
         run: |
-          sudo bash $GITHUB_WORKSPACE/Tool-SGSI-build/make.sh AB << EOF
+          sudo bash $GITHUB_WORKSPACE/Tool-SGSI-build/make.sh --AB << EOF
           ${{ github.event.inputs.ZIP_NAME }}
           y
-          y
-           
+          n
           y
 
       - name: Packing(AB)...
