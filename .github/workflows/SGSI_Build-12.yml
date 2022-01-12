@@ -66,11 +66,7 @@ jobs:
 
       - name: Make AB type GSI‌‌...
         run: |
-          sudo bash $GITHUB_WORKSPACE/Tool-SGSI-build/make.sh --AB << EOF
-          ${{ github.event.inputs.ZIP_NAME }}
-          y
-          n
-          y
+          sudo bash $GITHUB_WORKSPACE/Tool-SGSI-build/make.sh --AB miui "$GITHUB_WORKSPACE/Tool-SGSI-build/tmp/${{ github.event.inputs.ZIP_NAME }
 
       - name: Packing(AB)...
         run: |
