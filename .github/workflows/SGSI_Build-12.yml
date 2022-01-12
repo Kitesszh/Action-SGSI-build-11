@@ -66,7 +66,7 @@ jobs:
 
       - name: Make AB type GSI‌‌...
         run: |
-          sudo bash $GITHUB_WORKSPACE/SGSI-build-tool/make.sh --AB Pixel "${{ steps.config.outputs.zip_name }}"
+          sudo bash ./make.sh --AB Pixel "${{ steps.config.outputs.zip_name }}"
 
 
       - name: Packing(AB)...
